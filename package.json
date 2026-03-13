@@ -1,0 +1,20 @@
+{
+  "name": "discord-vc-poc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Discord VC recorder PoC scaffold up to Step 3",
+  "workspaces": [
+    "apps/recorder",
+    "apps/api",
+    "apps/worker"
+  ],
+  "scripts": {
+    "build": "npm run build -w apps/recorder && npm run build -w apps/api && npm run build -w apps/worker",
+    "dev:recorder": "npm run dev -w apps/recorder",
+    "dev:api": "npm run dev -w apps/api",
+    "dev:worker": "npm run dev -w apps/worker",
+    "start:recorder": "npm run start -w apps/recorder",
+    "start:api": "npm run start -w apps/api",
+    "start:worker": "npm run start -w apps/worker"
+  }
+}
