@@ -4,3 +4,5 @@ storage/
 sessions/
 *.log
 dist/
+# runtime data
+storage/sessions/
